@@ -5,20 +5,23 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Booking Class<span class="sr-only">(current)</span></a>
-                </li>
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="/news">News</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/search">Search</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/api/list-produc">test api</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dũng Nguyễn
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/course/create">Tạo khóa học mới</a>
+                        <a class="dropdown-item" href="/me/store/courses">Quản lý Khóa Học</a>
+                    </div>
                 </li>
             </ul>
         </div>
