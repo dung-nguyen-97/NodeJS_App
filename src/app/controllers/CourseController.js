@@ -23,5 +23,13 @@ class CourseControllers {
       .then(() => res.redirect('/'))
       .catch((err) => {});
   }
+  //[GET]  ./courses/eidt
+  edit(req, res, next) {
+    Course.findById(req.params.id)
+      .then((course) =>
+        res.render('./courses/edit', { course: mongooseToObject(course) }),
+      )
+      .catch(next);
+  }
 }
 module.exports = new CourseControllers();
